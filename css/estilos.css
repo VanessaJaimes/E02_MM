@@ -1,0 +1,33 @@
+.contenedor {
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  .contenedor .elemento label {
+    color: #fff;
+  }
+  .contenedor .elemento input {
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 20px;
+    color: aqua;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+  }
+
+  .personalizacion {
+    color: #fff;
+    width: 100%;
+    border-radius: 8px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    border-color:wheat;
+    background-color:rgba(32, 30, 30, 0.837);
+  }
+
