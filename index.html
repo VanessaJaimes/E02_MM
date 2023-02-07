@@ -17,13 +17,13 @@
   
       <!--Inventario 1-->
 
-  <div class="contenedor" v-if="ls_apt=='Administrador'">
+  <div class="contenedor" v-if="ls_apt=='inventario'">
     <h3 style="text-align: center; color: aqua; margin-top: -4%;">INVENTARIO </h3>
   <form id="forma" name="forma">
         <div class="elemento">
           <label for="appointment">Por favor elija una bodega: </label>
           <br>
-          <select v-model="ls_log" class="personalizacion" required="true">
+          <select v-model="ls_bod" class="personalizacion" required="true">
   
             <option>Bodega N° 1</option>
             <option>Bodega N° 2</option>
@@ -32,24 +32,24 @@
       </form>
     
     <form id="forma" name="forma">
-      <div class="elemento" v-if="ls_adm!=-1">
+      <div class="elemento" v-if="ls_bod!=-1">
         <label for="appointment">Cantidad de arroz: </label>
         <input type="number" placeholder="100.000 kg" readonly onmousedown="return false" name="appointment" required="true" id="appointment" class="a" />
       </div>
 
-      <div class="elemento" v-if="ls_adm==0">
+      <div class="elemento" v-if="ls_bod==0">
         <label for="pin">Cantidad de venta en kilos: </label>
         <input v-model="cnt_shoes" type="number" placeholder="0" name="pin" id="pin"
           required="true" />
       </div>
-      <div class="elemento" v-if="ls_adm==0">
+      <div class="elemento" v-if="ls_bod==0">
         <label for="pin">Cantidad de venta en libras: </label>
         <input v-model="cnt_zpl" type="number" placeholder="0" name="pin" id="pin"
           required="true" />
       </div>
 
       
-      <div class="elemento" v-if="ls_adm==0">
+      <div class="elemento" v-if="ls_bd==0">
         <label for="pin">Cantidad de venta en gramos: </label>
         <input v-model="cnt_zpl" type="number" placeholder="0" name="pin" id="pin"
           required="true" />
@@ -64,26 +64,28 @@
   
   </div>
 
+      <!--Inventario 2-->
+
   <div class="contenedor">
   <form id="forma" name="forma">
-      <div class="elemento" v-if="ls_adm!=-1">
+      <div class="elemento" v-if="ls_bod=-1">
         <label for="appointment">Cantidad de arroz: </label>
         <input type="number" placeholder="230.000 kg" readonly onmousedown="return false" name="appointment" required="true" id="appointment" class="a" />
       </div>
 
-      <div class="elemento" v-if="ls_adm==0">
+      <div class="elemento" v-if="ls_bods==0">
         <label for="pin">Cantidad de venta en kilos: </label>
         <input v-model="cnt_shoes" type="number" placeholder="0" name="pin" id="pin"
           required="true" />
       </div>
-      <div class="elemento" v-if="ls_adm==0">
+      <div class="elemento" v-if="ls_bods==0">
         <label for="pin">Cantidad de venta en libras: </label>
         <input v-model="cnt_zpl" type="number" placeholder="0" name="pin" id="pin"
           required="true" />
       </div>
 
       
-      <div class="elemento" v-if="ls_adm==0">
+      <div class="elemento" v-if="ls_bods==0">
         <label for="pin">Cantidad de venta en gramos: </label>
         <input v-model="cnt_zpl" type="number" placeholder="0" name="pin" id="pin"
           required="true" />
